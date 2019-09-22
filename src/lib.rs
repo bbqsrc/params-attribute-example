@@ -3,6 +3,6 @@ use proc_macro::TokenStream;
 
 #[proc_macro_attribute]
 pub fn rename_params(args: TokenStream, input: TokenStream) -> TokenStream {
-    println!("{} {}", &args, &input);
+    println!("{}", input);
     input
 }
